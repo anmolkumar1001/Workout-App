@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ExerciseActivity">
 
 <!--    Adding a toolbar to display a title-->
@@ -24,22 +25,24 @@
         android:textSize="22sp"
         android:textColor="@color/colorAccent"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/flProgressBar"
+        app:layout_constraintBottom_toTopOf="@+id/flRestView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
 
 <!--    Adding a view for the Get Ready Screen with a progress bar and remaining time text for the timer.-->
     <FrameLayout
-        android:id="@+id/flProgressBar"
+        android:id="@+id/flRestView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/item_circular_color_accent_border"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarExercise" >
+        app:layout_constraintTop_toBottomOf="@+id/toolbarExercise"
+        tools:visibility="visible">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -72,6 +75,31 @@
         </LinearLayout>
 
     </FrameLayout>
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:contentDescription="@string/image"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_jumping_jacks"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/tvExerciseName"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarExercise" />
+
+    <TextView
+        android:id="@+id/tvExerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ExerciseName"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+        tools:visibility = "visible" />
+
 
     <FrameLayout
         android:id="@+id/flExerciseView"
@@ -84,7 +112,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarExercise" >
+        app:layout_constraintTop_toBottomOf="@+id/tvExerciseName" >
 
         <ProgressBar
             android:id="@+id/progressBarExercise"
