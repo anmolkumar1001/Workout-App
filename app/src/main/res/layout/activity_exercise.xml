@@ -75,6 +75,37 @@
         </LinearLayout>
 
     </FrameLayout>
+
+    // Showing Upcoming Exercise Name
+    // Start
+    <TextView
+        android:id="@+id/upcomingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvUpcomingExerciseName"
+        android:text="UPCOMING EXERCISE: "
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/flRestView" />
+
+    <TextView
+        android:id="@+id/tvUpcomingExerciseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:textColor="#212121"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text="Exercise Name"
+        app:layout_constraintTop_toBottomOf="@+id/upcomingLabel" />
+    // End
+
+
     <ImageView
         android:id="@+id/ivImage"
         android:layout_width="match_parent"
@@ -86,6 +117,7 @@
         app:layout_constraintBottom_toTopOf="@+id/tvExerciseName"
         app:layout_constraintTop_toBottomOf="@+id/toolbarExercise" />
 
+    // For Showing Exercise Name
     <TextView
         android:id="@+id/tvExerciseName"
         android:layout_width="wrap_content"
@@ -100,7 +132,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivImage"
         tools:visibility = "visible" />
 
-
+    // Layout of Exercise View
     <FrameLayout
         android:id="@+id/flExerciseView"
         android:layout_width="100dp"

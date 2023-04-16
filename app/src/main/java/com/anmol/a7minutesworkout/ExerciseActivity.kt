@@ -53,18 +53,24 @@ class ExerciseActivity : AppCompatActivity() {
      * Function is used to set the timer for REST.
      */
 
+    // Adding Upcoming exercise label and name
     private fun setupRestView(){
         binding?.flRestView?.visibility = View.VISIBLE
         binding?.tvTitle?.visibility = View.VISIBLE
         binding?.tvExerciseName?.visibility = View.INVISIBLE
         binding?.flExerciseView?.visibility = View.INVISIBLE
         binding?.ivImage?.visibility = View.INVISIBLE
+        binding?.upcomingLabel?.visibility = View.VISIBLE
+        binding?.tvUpcomingExerciseName?.visibility = View.VISIBLE
 
 
         if(restTimer != null){
             restTimer?.cancel()
             restProgress = 0
         }
+
+        // Set Upcoming exercise name to the text view
+        binding?.tvUpcomingExerciseName?.text = exerciseList!![currentExercisePosition + 1].getName()
 
         setRestProgressBar()
     }
@@ -77,6 +83,9 @@ class ExerciseActivity : AppCompatActivity() {
         binding?.tvExerciseName?.visibility = View.VISIBLE
         binding?.flExerciseView?.visibility = View.VISIBLE
         binding?.ivImage?.visibility = View.VISIBLE
+        // Adding Upcoming exercise name
+        binding?.upcomingLabel?.visibility = View.INVISIBLE
+        binding?.tvUpcomingExerciseName?.visibility = View.INVISIBLE
 
         if(exerciseTimer != null){
             exerciseTimer?.cancel()
@@ -134,7 +143,7 @@ class ExerciseActivity : AppCompatActivity() {
                 } else {
                     Toast.makeText(
                         this@ExerciseActivity,
-                        "Congratulations! You have completed the 7 minutes workout.",
+                        "Congratulations!👏 You have completed the 7 minutes workout.",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
