@@ -20,13 +20,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         // Then replace the setContentView parameter with binding?.root
         setContentView(binding?.root)
-//        val flStartButton: FrameLayout = findViewById(R.id.flStart)
+       // val flStartButton: FrameLayout = findViewById(R.id.flStart)
         binding?.flStart?.setOnClickListener {
-//            Toast.makeText(
-//                this@MainActivity,
-//                "Here we will start the exercise.",
-//                Toast.LENGTH_SHORT
-//            ).show()
 
             // When click to start then open new page.
             val intent = Intent(this, ExerciseActivity::class.java)
@@ -36,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        //Todo 4: TO avoid memory leak we unassign the binding once the activity is destroyed
+        // TO avoid memory leak we unassign the binding once the activity is destroyed
         binding = null
     }
 }

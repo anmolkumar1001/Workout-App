@@ -5,11 +5,17 @@
       <map>
         <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/circular_progress_bar.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/circular_progress_gray.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/ic_action_done.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_accent_background.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_accent_border.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_color_gray_background.xml" value="0.15092592592592594" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_circular_thin_color_accent_border.xml" value="0.15092592592592594" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/drawable/item_color_accent_border_ripple_background.xml" value="0.1" />
-        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.22" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/layout/activity_exercise.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/layout/activity_finish.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/layout/dialog_custom_back_confirmation.xml" value="0.1" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/7MinutesWorkout/app/src/main/res/layout/item_exercise_status.xml" value="0.1" />
       </map>
     </option>
   </component>
