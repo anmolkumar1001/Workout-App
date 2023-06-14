@@ -8,35 +8,33 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/myImageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/flStart"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
         android:contentDescription="@string/image"
         android:src="@drawable/img_main_page"
-        android:layout_width="match_parent"
-        android:layout_height="220dp" />
+        app:layout_constraintBottom_toTopOf="@id/flStart"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/flStart"
-        app:layout_constraintTop_toBottomOf="@+id/myImageView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/item_color_accent_border_ripple_background">
+        android:background="@drawable/item_color_accent_border_ripple_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="START"
             android:layout_gravity="center"
+            android:text="START"
             android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/default_button_text_size"
-            android:textStyle="bold"
-
-            />
+            android:textSize="22sp"
+            android:textStyle="bold" />
     </FrameLayout>
-    <!--Designing a button to call the BMI calculator feature.-->
-    <!--START-->
+
     <FrameLayout
         android:id="@+id/flBMI"
         android:layout_width="70dp"
